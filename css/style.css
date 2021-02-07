@@ -1,0 +1,46 @@
+#nav-icon{
+    height: 74.93px;
+    width: 97.97;
+}
+.btn-orange{
+    background-color: lightsalmon;
+    color: white;
+}
+.search-area{
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+.search-area div{
+    padding: 0;
+    margin: 0;
+}
+.search-area input,.search-area button{
+    height: 40px;
+    width: 100%;
+}
+.search-area input{
+    border-radius: 5px 0px 0 5px;
+}
+.search-area button{
+    border-radius: 0 5px 5px 0;
+}
+.meals{
+    width: 80%;
+    margin: 3em auto;
+    display: grid;
+    grid-template-columns: repeat(4, .5fr);
+}
+.meal{
+    width: 270px;
+    height: 300px;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 2px 2px 10px gray;
+    text-align: center;
+    margin-bottom: 2em;
+}
+.meal img{
+    max-height: 90%;
+    min-height: 50%;
+}
