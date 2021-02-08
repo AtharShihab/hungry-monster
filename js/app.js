@@ -47,7 +47,6 @@ searchResults.addEventListener("click", function (event) {
 });
 
 const displayMealDetail = (data) => {
-  console.log(data);
   //hides searchArea and shows meal-detail area
   document.getElementById("meal-search").style.display = "none";
   const mealDetailArea = document.getElementById("meal-detail-area");
