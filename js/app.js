@@ -47,6 +47,7 @@ searchResults.addEventListener("click", function (event) {
 });
 
 const displayMealDetail = (data) => {
+  console.log(data);
   //hides searchArea and shows meal-detail area
   document.getElementById("meal-search").style.display = "none";
   const mealDetailArea = document.getElementById("meal-detail-area");
@@ -71,7 +72,10 @@ const displayMealDetail = (data) => {
   const ingredientsList = document.getElementById("ingredients");
   let allIngredients = "";
   for (let i = 0; i < 20; i++) {
-    if (selectedMeal[`strIngredient${i + 1}`] === "") {
+    if (
+      selectedMeal[`strIngredient${i + 1}`] === "" ||
+      selectedMeal[`strIngredient${i + 1}`] === null
+    ) {
       break;
     }
     allIngredients += `<li>${selectedMeal[`strIngredient${i + 1}`]} ${
