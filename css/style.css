@@ -1,11 +1,3 @@
-#nav-icon{
-    height: 74.93px;
-    width: 97.97;
-}
-.btn-orange{
-    background-color: lightsalmon;
-    color: white;
-}
 .search-area{
     text-align: center;
     width: 50%;
@@ -15,21 +7,12 @@
     padding: 0;
     margin: 0;
 }
-.search-area input,.search-area button{
-    height: 40px;
-    width: 100%;
+.no-meal-found{
+    margin: 2em auto;
 }
-.search-area input{
-    border-radius: 5px 0px 0 5px;
-}
-.search-area button{
-    border-radius: 0 5px 5px 0;
-}
-.meals{
-    width: 80%;
-    margin: 3em auto;
-    display: grid;
-    grid-template-columns: repeat(4, .5fr);
+.btn-orange{
+    background-color: lightsalmon;
+    color: white;
 }
 .meal{
     width: 270px;
@@ -43,4 +26,41 @@
 .meal img{
     max-height: 90%;
     min-height: 50%;
+}
+#nav-icon{
+    height: 74.93px;
+    width: 97.97;
+}
+#meal-detail-area{
+    text-align: justify;
+    width: 60%;
+    margin: 3em auto;
+    display: none;
+}
+#meal-detail-image{
+    width: 588px;
+    height: 322px;
+    border-radius: 10px;
+}
+#meal-detail-image, #meal-detail-name, .meal-details h6{
+    margin-bottom: 1em;
+}
+#searchBar,#searchButton{
+    height: 40px;
+    width: 100%;
+}
+#searchBar{
+    border-radius: 5px 0px 0 5px;
+}
+#searchButton{
+    border-radius: 0 5px 5px 0;
+}
+#searchResults{
+    width: 80%;
+    margin: 3em auto;
+    display: grid;
+    grid-template-columns: repeat(4, .5fr);
+}
+#error-message{
+    color: indigo;
 }
